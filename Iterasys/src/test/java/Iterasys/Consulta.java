@@ -27,7 +27,7 @@ public class Consulta  {
 	public void iniciar() {
 		
 		url="https://iterasys.com.br/";
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Noboru\\eclipse-workspace\\Iterasys\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "c:\\users\\BRUNO\\.jenkins\\workspace\\Selenium\\Iterasys\\Drivers\\chromedriver.exe");
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(60000,TimeUnit.MILLISECONDS);	
