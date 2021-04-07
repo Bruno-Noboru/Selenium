@@ -40,7 +40,8 @@ public class Massatest<Leitura>  {
 
 		url = "https://www.salesforce.com/br/form/signup/freetrial-sales-pe/?d=70130000000EqoP";
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\Noboru\\eclipse-workspace\\CSV\\Yahoo\\Drivers\\chromedriver.exe");
+				"c:\\users\\BRUNO\\.jenkins\\workspace\\Consulta\\Yahoo\\Drivers\\chromedriver.exe");
+		
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(60000, TimeUnit.MILLISECONDS);
