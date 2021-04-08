@@ -40,7 +40,7 @@ public class Massatest<Leitura>  {
 
 		url = "https://www.salesforce.com/br/form/signup/freetrial-sales-pe/?d=70130000000EqoP";
 		System.setProperty("webdriver.chrome.driver",
-				"c:\\users\\BRUNO\\.jenkins\\workspace\\Consulta\\Yahoo\\Drivers\\chromedriver.exe");
+				"C:\\users\\BRUNO\\.jenkins\\workspace\\Consulta\\Yahoo\\Drivers\\chromedriver.exe");
 		
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -61,9 +61,9 @@ public class Massatest<Leitura>  {
 		 
 		 try {
 		
-		 FileInputStream arquivo=new FileInputStream("C:\\Users\\Noboru\\eclipse-workspace\\CSV\\Yahoo\\Dados\\dados.csv");
+		 FileInputStream arquivo=new FileInputStream("C:\\Users\\BRUNO\\.jenkins\\workspace\\Consulta\\Yahoo\\Dados\\dados.csv");
          InputStreamReader input = new InputStreamReader(arquivo);         
-         FileOutputStream grava=new FileOutputStream("C:\\Users\\Noboru\\eclipse-workspace\\CSV\\Yahoo\\Dados\\arquivo.txt");
+         FileOutputStream grava=new FileOutputStream("C:\\Users\\BRUNO\\.jenkins\\workspace\\Consulta\\Yahoo\\Dados\\arquivo.txt");
          PrintWriter pr= new PrintWriter(grava);         
          
      
