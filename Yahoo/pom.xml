@@ -35,9 +35,9 @@
 			<plugin>
 				<!-- https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
 				<groupId>net.masterthought</groupId>
-				<artifactId>cucumber-reporting</artifactId>
-				<version>5.5.2</version>
-
+				<artifactId>maven-cucumber-reporting</artifactId>
+				<version>5.0.0</version>
+				
 				<executions>
 					<execution>
 						<id>execution</id>
@@ -47,12 +47,14 @@
 						</goals>
 						<configuration>
 							<projectName>Yahoo</projectName>
-							<outputDirectory>${project.build.directory}/cucumber/json</outputDirectory>
+							<skip>false</skip>
+							<outputDirectory>${project.build.directory}/cucumber</outputDirectory>
 							<inputDirectory>${project.build.directory}/cucumber</inputDirectory>
 							<jsonFiles>
 								<!-- supports wildcard or name pattern -->
 								<param>**/*.json</param>
 							</jsonFiles>
+							<checkBuildResult>false</checkBuildResult>
 							<include>${test.integration.pattern}</include>
 							<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 							<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -102,13 +104,7 @@
 			<artifactId>maven-surefire-plugin</artifactId>
 			<version>3.0.0-M5</version>
 		</dependency>
-		<dependency>
-			<!-- https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
-			<groupId>net.masterthought</groupId>
-			<artifactId>cucumber-reporting</artifactId>
-			<version>5.5.2</version>
-			<scope>test</scope>
-		</dependency>
+		
 
 		<!-- https://mvnrepository.com/artifact/com.github.mkolisnyk/cucumber-runner -->
 		<dependency>
